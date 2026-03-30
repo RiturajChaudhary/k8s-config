@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: frontend-app
-          image: rituraj4164/frontend-app:23
+          image: rituraj4164/frontend-app:24
           ports:
             - containerPort: 80
