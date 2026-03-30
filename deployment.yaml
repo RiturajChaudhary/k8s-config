@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: frontend-app
-          image: rituraj4164/frontend-app:latest   # Jenkins will replace this
+          image: rituraj4164/frontend-app:18
           ports:
             - containerPort: 80
