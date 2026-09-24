@@ -1,19 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-app
+  name: cicd-demo
+  labels:
+    app: cicd-demo
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: frontend-app
+      app: cicd-demo
   template:
     metadata:
       labels:
-        app: frontend-app
+        app: cicd-demo
     spec:
       containers:
-        - name: frontend-app
-          image: rituraj4164/cicd-demo:v1
+        - name: cicd-demo
+          image: rituraj4164/cicd-demo:44dd7ce0c3a2d5bacf0a8cba4768faee9c40e455
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
