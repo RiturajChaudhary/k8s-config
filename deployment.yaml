@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend-app
-  labels:
-    app: frontend-app
 spec:
   replicas: 2
   selector:
@@ -18,4 +16,4 @@ spec:
         - name: frontend-app
           image: rituraj4164/cicd-demo:v1
           ports:
-            - containerPort: 80
+            - containerPort: 3000
