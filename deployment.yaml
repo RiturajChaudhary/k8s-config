@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: cicd-demo
-          image: rituraj4164/cicd-demo:44dd7ce0c3a2d5bacf0a8cba4768faee9c40e455
+          image: rituraj4164/cicd-demo:v1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
