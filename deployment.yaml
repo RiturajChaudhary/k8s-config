@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: frontend-app
-          image: rituraj4164/frontend-app:31
+          image: rituraj4164/cicd-demo:v1
           ports:
             - containerPort: 80
